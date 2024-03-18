@@ -9,19 +9,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Dark text color */
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #fff; /* White container background */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
-            color: #007bff;
+            color: #007bff; /* Blue headers */
         }
         .section {
             margin-bottom: 20px;
@@ -37,7 +37,7 @@
             padding-left: 20px;
         }
         a {
-            color: #007bff;
+            color: #007bff; /* Blue links */
             text-decoration: none;
         }
         a:hover {
@@ -46,8 +46,45 @@
         hr {
             border: 0;
             height: 1px;
-            background-color: #ccc;
+            background-color: #ccc; /* Light gray horizontal rule */
             margin: 20px 0;
+        }
+        .portfolio-links {
+            margin-bottom: 30px;
+        }
+        .portfolio-links ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .portfolio-links li {
+            margin-bottom: 10px;
+        }
+        .portfolio-links a {
+            display: block;
+            padding: 10px;
+            background-color: #007bff; /* Blue tab background */
+            color: #fff; /* White tab text color */
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .portfolio-links a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .profile-image {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .profile-image img {
+            border-radius: 50%; /* Round profile image */
+            width: 150px;
+            height: 150px;
         }
         @media screen and (max-width: 600px) {
             .container {
@@ -60,7 +97,28 @@
 
 <div class="container">
     <h1>Syed Hilaluddin Madany</h1>
-    <p><strong>Summary:</strong> Skilled professional with diverse experience in sales, engineering, project management, and facilities management.</p>
+    <div class="portfolio-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="community.html">Community and Philanthropy</a></li>
+            <li><a href="goals.html">Future Goals</a></li>
+            <li><a href="content.html">Explore My Content</a></li>
+            <li><a href="connect.html">Connect and Collaborate</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="contact-info">
+        <p>Email: <a href="mailto:syed.madany86@gmail.com">syed.madany86@gmail.com</a></p>
+        <p>Website: <a href="http://www.accumentechno.com">www.accumentechno.com</a></p>
+    </div>
+
+    <div class="profile-image">
+        <!-- Replace 'placeholder.jpg' with your actual image URL -->
+        <img src="placeholder.jpg" alt="Syed Hilaluddin Madany">
+    </div>
 
     <div class="section">
         <h2>About Me</h2>
@@ -104,20 +162,7 @@
         <p>Join the Accumen Techno community for valuable insights and networking opportunities.</p>
     </div>
     <hr>
-    
-    <div class="section">
-        <h2>Portfolio Pages</h2>
-        <ul>
-            <li><a href="index.html">Home</a> - Introduction to the portfolio.</li>
-            <li><a href="about.html">About Me</a> - Detailed information about my background and experiences.</li>
-            <li><a href="community.html">Community and Philanthropy</a> - Involvement in community development and welfare.</li>
-            <li><a href="goals.html">Future Goals</a> - Aspirations and ambitions for the future.</li>
-            <li><a href="content.html">Explore My Content</a> - Links to insightful content on LinkedIn.</li>
-            <li><a href="connect.html">Connect and Collaborate</a> - Contact information for collaboration opportunities.</li>
-            <li><a href="community.html">Let's Elevate Together</a> - Joining the Accumen Techno community for networking.</li>
-        </ul>
-    </div>
 </div>
 
 </body>
-</html
+</html>
