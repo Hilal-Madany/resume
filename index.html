@@ -22,6 +22,7 @@
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
         li {
             margin-bottom: 10px;
@@ -30,6 +31,22 @@
             border-radius: 50%;
             max-width: 150px;
             height: auto;
+            margin-bottom: 20px;
+        }
+        .double-line {
+            border-top: 2px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .double-line::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            border-top: 2px solid #ccc;
         }
     </style>
 </head>
@@ -39,6 +56,7 @@
         <img src="profile_picture.jpg" alt="Profile Picture">
         <p>Telephone: +966 534262974</p>
     </div>
+    <div class="double-line"></div>
 
     <div class="segment">
         <h2>About Me</h2>
@@ -51,6 +69,7 @@
             <li>🎥 <strong>Content Creation and Education:</strong> Beyond my career, I'm passionate about creating educational content, especially in the realm of mechanical projects and technical concepts. This hobby allows me to share knowledge and learn in a fun way.</li>
         </ul>
     </div>
+    <div class="double-line"></div>
 
     <div class="segment">
         <h2>Community and Philanthropy</h2>
@@ -58,6 +77,7 @@
             <li>👫 <strong>Dedicated to the Community:</strong> Giving back is a core value. I am associated with Modern Education and Welfare Society / MMF Trust, where we tirelessly work to develop and nurture the community.</li>
         </ul>
     </div>
+    <div class="double-line"></div>
 
     <div class="segment">
         <h2>Future Goals</h2>
@@ -66,6 +86,7 @@
             <li>🤝 <strong>Collaboration:</strong> I'm always open to collaborations with professionals who share my passion for innovation, efficiency, and diverse experiences. Let's explore how our shared enthusiasm can lead to exciting collaborations!</li>
         </ul>
     </div>
+    <div class="double-line"></div>
 
     <div class="segment">
         <h2>Explore My Content 🌐 📝 Content Writer Extraordinaire</h2>
@@ -76,6 +97,7 @@
         </ul>
         <p>In addition to creating compelling content that bridges technical complexities with practical insights, I also offer training programs designed to empower teams and elevate their expertise.</p>
     </div>
+    <div class="double-line"></div>
 
     <div class="segment">
         <h2>Connect and Collaborate</h2>
@@ -93,5 +115,6 @@
         <p>Thank you for joining me on this journey. Let's explore, learn, and elevate our skills together!</p>
         <p>Reach at <a href="mailto:syed.madany86@gmail.com">syed.madany86@gmail.com</a> / <a href="http://www.accumentechno.com">www.accumentechno.com</a></p>
     </div>
+    <div class="double-line"></div>
 </body>
 </html>
