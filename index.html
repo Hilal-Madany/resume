@@ -5,61 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Syed Hilaluddin Madany - Profile</title>
   <style>
-    /* Centering the container and styling background */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
+    /* Centering the container */
     .container {
       max-width: 800px;
-      margin: 20px auto;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #f4f4f4; /* Light grey background */
       padding: 20px;
-      background-color: #f0f0f0;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    /* Centering contact number and designation */
-    .contact-info, h3 {
-      text-align: center;
-    }
     /* Styling for profile image */
     .profile-img {
-      display: block;
-      margin: 0 auto;
       width: 200px;
       height: auto;
       border-radius: 50%;
-      margin-bottom: 20px;
     }
     /* Styling for blog posts */
     .blog-post {
       text-align: left;
+    }
+    /* Styling for name and designation */
+    h1, h3 {
+      margin-bottom: 10px;
+    }
+    /* Styling for back button */
+    .back-button {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Syed Hilaluddin Madany</h1>
-    <div class="contact-info">
-      <p style="color: #333;">Contact No: +966 534262974</p>
-    </div>
+    <p>Contact No: <span id="contact">+966 534262974</span></p>
     
     <img src="Digital Marketer LinkedIn Profile Picture.jpg" alt="Profile Image" class="profile-img">
     
-    <h3 style="background-color: #f4f4f4; padding: 10px; border-radius: 5px;">Techno-Commercial (Sales & Marketing) Engineer || Maintenance Supervisor || Educational Content Creator & A Solopreneur</h3>
+    <h3>Techno-Commercial (Sales & Marketing) Engineer || Maintenance Supervisor || Educational Content Creator & A Solopreneur</h3>
     <p>Email: syed.madany86@gmail.com</p>
     
     <p>Hello! I began my career in the sales industry, where I honed my communication skills, built strong customer relationships, and helped clients meet their needs.</p>
     
     <h2>Recent Blog Posts</h2>
     <div class="blog-post">
-      <a href="Designing a Continuous Stress-Relieving Furnace-A Case Study.html">Designing a Continuous Stress-Relieving Furnace-A Case Study</a>
+      <a href="Designing a Continuous Stress-Relieving Furnace-A Case Study">Designing a Continuous Stress-Relieving Furnace-A Case Study</a>
       <p>March 15, 2024</p>
     </div>
     <div class="blog-post">
-      <a href="Enhancing Operational Efficiency in Facility Management.html">Enhancing Operational Efficiency in Facility Management</a>
+      <a href="Enhancing Operational Efficiency in Facility Management">Enhancing Operational Efficiency in Facility Management</a>
       <p>March 22, 2024</p>
     </div>
     
@@ -80,8 +74,10 @@
     
     <p>Thank you for joining me on this journey. Let's explore, learn, and elevate our skills together!</p>
     
-    <!-- Go back button -->
-    <button onclick="goBack()">Go Back</button>
+    <!-- Back button (only added to blog pages) -->
+    <div class="back-button">
+      <button onclick="goBack()">Go Back</button>
+    </div>
 
     <script>
       function goBack() {
