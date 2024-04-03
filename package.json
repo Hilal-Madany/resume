@@ -1,0 +1,12 @@
+{
+  "name": "my-subscription-server",
+  "version": "1.0.0",
+  "description": "Subscription server for technical eBooks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
