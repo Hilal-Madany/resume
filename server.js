@@ -1,24 +1,15 @@
 const express = require('express');
-const path = require('path');
-
 const app = express();
 
-// Serve static files
-app.use(express.static(path.join(__dirname)));
-
-// Serve the subscription form
-app.get('/subscription.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'subscription.html'));
-});
-
-// Handle form submissions
+// Handle POST requests to /subscribe
 app.post('/subscribe', (req, res) => {
-  // TODO: Handle subscription form submissions
+  const name = req.body.name;
+  const email = req.body.email;
+  console.log(`Name: ${name}, Email: ${email}`);
   res.send('Thank you for subscribing!');
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+app.listen(3000, () => {
+  console.log('Server is listening on port 3000');
 });
